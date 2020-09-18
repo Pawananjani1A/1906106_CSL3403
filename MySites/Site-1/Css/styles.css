@@ -82,6 +82,12 @@ hr{
   text:#11CDD4;
 }
 
+.nav-link:hover{
+  color:blue;
+  opacity: 1;
+  font-weight: bolder;
+}
+
 p{
   line-height: 2;
 }
