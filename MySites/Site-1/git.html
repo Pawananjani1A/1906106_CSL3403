@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Git Commands</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Css/styles.css">
+    </link>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style media="screen">
+      body{
+        background-color: #dff6f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container">
+  <h2>Git Commands</h2>
+  <p>Working with Git on the command line can be daunting. To help with that, we’ve put together a list of common Git commands, what each one means, and how to use them. Our hope is that this makes Git easier to use on a daily basis.
+
+Git has many great clients that allow you to use Git without the command line. Knowing what actions the client is performing in the background is beneficial to understanding how Git works. If you’re getting started with Git also check out our fantastic guide on the topic.</p>
+<img src="Css/images/GitDiagram.png" height="500px" alt="Git-pic">
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCommand('git commit')">git commit</button>
+  <button class="w3-bar-item w3-button" onclick="openCommand('git push')">git push</button>
+  <button class="w3-bar-item w3-button" onclick="openCommand('git fork')">git fork</button>
+  <button class="w3-bar-item w3-button" onclick="openCommand('git clone')">git clone</button>
+  <button class="w3-bar-item w3-button" onclick="openCommand('git pull')">git pull</button>
+  <button class="w3-bar-item w3-button" onclick="openCommand('git merge')">git merge</button>
+</div>
+
+<div id="git commit" class="w3-container command">
+  <h2>git commit</h2>
+  <p>Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.
+
+It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.</p>
+<img src="Css/images/git-pic3.png" alt="git-commit pic">
+</div>
+
+<div id="git push" class="w3-container command" style="display:none">
+  <h2>git push</h2>
+  <p>Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.</p>
+  <img src="Css/images/git-pic3.png" alt="git-push pic">
+</div>
+
+<div id="git fork" class="w3-container command" style="display:none">
+  <h2>git fork</h2>
+  <p>A fork is a copy of a repository. Forking a repository allows to freely experiment with changes without affecting the original project.</p>
+  <img src="Css/images/github-fork.png" alt="git-fork pic">
+</div>
+
+<div id="git clone" class="w3-container command" style="display:none">
+  <h2>git clone</h2>
+  <p>To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history.</p>
+  <img src="Css/images/git_clone.png" alt="git-clone-pic">
+</div>
+
+<div id="git pull" class="w3-container command" style="display:none">
+  <h2>git pull</h2>
+  <p>To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.</p>
+  <img src="Css/images/git-pull6.png" alt="git-pull pic">
+</div>
+
+<div id="git merge" class="w3-container command" style="display:none">
+  <h2>git merge</h2>
+  <p>Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.</p>
+  <img src="Css/images/git-merge.png" alt="git-merge pic">
+</div>
+
+<script>
+function openCommand(commandName) {
+  var i;
+  var x = document.getElementsByClassName("command");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(commandName).style.display = "block";
+}
+</script>
+
+  </body>
+</html>
