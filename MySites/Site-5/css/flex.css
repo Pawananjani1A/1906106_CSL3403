@@ -1,0 +1,64 @@
+body{
+  background-image: url('../images/blue-background.jpg');
+  background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+img{
+  width:33%;
+  height: 50%;
+}
+
+.column img{
+  margin-top: 9px;
+  vertical-align: middle;
+  flex:33%;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+
+.img1:hover{
+  width: 50%
+  height:30%;
+  transform: rotate(90deg);
+  transform: skewY(20deg);
+  animation: zoominoutsinglefeatured 1s infinite ;
+  box-shadow: 3px orange;
+  border-style:solid;
+   z-index: 1;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.img2:hover{
+  width: 50%
+  height:30%;
+  transform: rotate(90deg);
+  transform: skewY(20deg);
+  -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+  box-shadow: 3px orange;
+  border-style:solid;
+   z-index: 1;
+}
